@@ -5,7 +5,7 @@ import RevolverCase as RC
 pygame.init()
 
 screen = pygame.display.set_mode([1600, 900])
-background = pygame.image.load("images\CSGO-Cases-background.jpg")
+background = pygame.image.load("images/CSGO-Cases-background.jpg")
 
 original_size = background.get_size()
 
