@@ -1,6 +1,7 @@
 #Revolver Case Skins
 import random as rand
 
+x = 0
 
 skins_list = {
     "Gold": ["Bayonet|", "Flip Knife|", "Gut Knife|", "Karambit|", "M9 Bayonet|"],
@@ -25,4 +26,7 @@ def get_skin_revolver_case():
     
     return rand.choice(skins_list[rarity])
 
-print(get_skin_revolver_case())
+
+while x < 10:
+    print(get_skin_revolver_case())
+    x += 1
