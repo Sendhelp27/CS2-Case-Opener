@@ -4,7 +4,7 @@ import RevolverCase as RC
 
 x = 0
 
-def get_skin_revolver_case():
+def get_skin_case():
     number = (rand.randint(1, 10000)) / 100
     if number <= 0.26:
         rarity = "Gold"
@@ -20,5 +20,5 @@ def get_skin_revolver_case():
     return rand.choice(skins_list[rarity])
 
 while x < 10:
-    print(get_skin_revolver_case())
+    print(get_skin_case())
     x += 1
