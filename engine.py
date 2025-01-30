@@ -2,8 +2,6 @@
 import random as rand
 
 
-skins_rarity = ["Gold", "Red", "Pink", "Purple", "Dark Blue"]
-skins_weighting = [0.26, 0.38, 2.34, 15.98, 79.92]
 skins_list = {
     "Gold": ["Bayonet|", "Flip Knife|", "Gut Knife|", "Karambit|", "M9 Bayonet|"],
     "Red": ["M4A4 | Royal Paladin", "R8 Revolver | Fade"],
@@ -12,8 +10,7 @@ skins_list = {
     "Dark Blue": ["R8|Revolver", "AUG| Richochet", "Desert Eagle| Corinthian", "P2000| Imperial", "Sawed-Off| Yorick", "SCAR-20| Outbreak"]
 }
 
-    
-def get_skin_rarity_revolver_case():
+def get_skin_revolver_case():
     number = (rand.randint(1, 10000)) / 100
     if number <= 0.26:
         rarity = "Gold"
@@ -28,4 +25,4 @@ def get_skin_rarity_revolver_case():
     
     return rand.choice(skins_list[rarity])
 
-print(get_skin_rarity_revolver_case())
+print(get_skin_revolver_case())
