@@ -21,10 +21,16 @@ def get_skin_case():
     else:
         rarity = "Dark Blue"
         float = rand.randint(1, 90000000) / 100000000
+    
+    StatTrack = rand.randint(0,9)
+    if StatTrack == 0:
+        StatTrack = "StatTrack"
+    else: 
+        StatTrack = ""
        
-    return rand.choice(RC.skins_list[rarity]), float
+    return rand.choice(RC.skins_list[rarity]), float, StatTrack
 
-skin, float_value = get_skin_case()
-print(f"Skin: {skin}, Float value: {float_value}")
+skin, float_value, StatTrack = get_skin_case()
+print(f"Skin: {StatTrack} {skin}, Float value: {float_value}")
 
  
