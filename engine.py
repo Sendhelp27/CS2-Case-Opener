@@ -2,7 +2,7 @@
 import random as rand
 import RevolverCase as RC
 
-float = 0.0
+
 
 def get_skin_case():
     number = (rand.randint(1, 10000)) / 100
@@ -22,9 +22,10 @@ def get_skin_case():
         rarity = "Dark Blue"
         float = rand.randint(1, 90000000) / 100000000
     
-    return rand.choice(RC.skins_list[rarity]), float
+    return rand.choice(RC.skins_list[rarity])
 
 
 print(get_skin_case())
+print(f"Skin: {get_skin_case}, Float value: ")
 
  
