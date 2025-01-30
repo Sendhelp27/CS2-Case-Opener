@@ -4,8 +4,8 @@ import RevolverCase as RC
 
 pygame.init()
 
-screen = pygame.display.set_mode([1920, 1065])
-background = pygame.image.load("images/Counter-background.jpg")
+screen = pygame.display.set_mode([800, 450])
+background = pygame.image.load("images\CSGO-Cases-background.jpg")
 
 running = True
 
