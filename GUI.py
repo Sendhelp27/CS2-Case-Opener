@@ -4,7 +4,8 @@ import RevolverCase as RC
 
 pygame.init()
 
-screen = pygame.display.set_mode([1600, 500])
+screen = pygame.display.set_mode([1920, 1065])
+background = pygame.image.load("images/Counter-background.jpg")
 
 running = True
 
@@ -13,7 +14,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    pygame.image.load
+    screen.blit(background, (0, 0))
 
     pygame.display.flip()
 
