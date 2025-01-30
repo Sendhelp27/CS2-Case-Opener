@@ -17,7 +17,7 @@ def get_skin_case():
     else:
         rarity = "Dark Blue"
     
-    return rand.choice(skins_list[rarity])
+    return rand.choice(RC.skins_list[rarity])
 
 while x < 10:
     print(get_skin_case())
