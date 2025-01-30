@@ -22,7 +22,7 @@ def get_skin_revolver_case():
         rarity = "Purple"
     else:
         rarity = "Dark Blue"
-    
+
     return rand.choice(skins_list[rarity])
 
 print(get_skin_revolver_case())
