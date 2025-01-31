@@ -1,9 +1,10 @@
-#Revolver Case Skins
+# Revolver Case Skins
+# adding random and the cases to the engine
 import random as rand
 import RevolverCase as RC
 
 
-
+# the function that powers the engine, chosing rarity, float and stattack
 def get_skin_case():
     number = (rand.randint(1, 10000)) / 100
     if number <= 0.26:
@@ -27,9 +28,10 @@ def get_skin_case():
         StatTrack = "StatTrack"
     else: 
         StatTrack = ""
-       
+       # here we return the skin based on the rarity
     return rand.choice(RC.skins_list[rarity]), float, StatTrack
 
+# here we print the output the engine gave us
 skin, float_value, StatTrack = get_skin_case()
 print(f"Skin: {StatTrack} {skin}, Float value: {float_value}")
 

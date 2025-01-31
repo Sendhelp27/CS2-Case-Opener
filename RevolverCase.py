@@ -1,3 +1,4 @@
+# simple way of ordering case items for easy use in the engine
 skins_list = {
     "Gold": ["Bayonet|", "Flip Knife|", "Gut Knife|", "Karambit|", "M9 Bayonet|"],
     "Red": ["M4A4 | Royal Paladin", "R8 Revolver | Fade"],
